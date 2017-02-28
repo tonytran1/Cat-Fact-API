@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title} API
+  p This prototype API supports 4 get responses.
+  p Created to learn how to make APIs using NodeJS, Express, and PostgreSQL
+  p All Responses are in JSON format.
+  p Very limited database. Created for educational purposes.
+  h1 Example Usages:
+  div
+    h2 All Facts - Returns all cat facts from database:
+    a(href="https://the-cat-fact.herokuapp.com/api/facts") https://the-cat-fact.herokuapp.com/api/facts
+  div
+    h2 Random Fact - Returns a random cat fact from database:
+    a(href="https://the-cat-fact.herokuapp.com/api/randomfact") https://the-cat-fact.herokuapp.com/api/randomfact
+  div
+    h2 Cat Info - Returns specific cat breed information from database:
+    a(href="https://the-cat-fact.herokuapp.com/api/cats/tabby") https://the-cat-fact.herokuapp.com/api/cats/tabby
+    p Replace "tabby" with a cat breed
+  div
+    h2 All Cat Info - Returns all cat breed information from database:
+    a(href="https://the-cat-fact.herokuapp.com/api/cats") https://the-cat-fact.herokuapp.com/api/cats
